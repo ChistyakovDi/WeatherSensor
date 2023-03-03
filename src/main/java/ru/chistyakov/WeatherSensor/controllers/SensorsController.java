@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import ru.chistyakov.WeatherSensor.dto.SensorDTO;
-import ru.chistyakov.WeatherSensor.models.Measurement;
 import ru.chistyakov.WeatherSensor.models.Sensor;
 import ru.chistyakov.WeatherSensor.services.SensorService;
 import ru.chistyakov.WeatherSensor.util.MeasurementErrorResponse;
@@ -27,6 +26,7 @@ public class SensorsController {
     private final ModelMapper modelMapper;
     private final SensorValidator sensorValidator;
 
+    @Autowired
     public SensorsController(SensorService sensorService, ModelMapper modelMapper,
                              SensorValidator sensorValidator) {
         this.sensorService = sensorService;

@@ -1,5 +1,6 @@
 package ru.chistyakov.WeatherSensor.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.chistyakov.WeatherSensor.models.Sensor;
@@ -13,6 +14,7 @@ public class SensorService {
 
     private final SensorRepository sensorRepository;
 
+    @Autowired
     public SensorService(SensorRepository sensorRepository) {
         this.sensorRepository = sensorRepository;
     }
