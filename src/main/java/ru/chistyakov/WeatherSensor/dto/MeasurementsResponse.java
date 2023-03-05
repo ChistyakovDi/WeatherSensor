@@ -4,17 +4,17 @@ import java.util.List;
 
 public class MeasurementsResponse {
 
-    private List<MeasurementDTO> measurement;
+    private List<MeasurementDTO> measurements;
 
-    public MeasurementsResponse(List<MeasurementDTO> measurement) {
-        this.measurement = measurement;
+    public MeasurementsResponse(List<MeasurementDTO> measurements) {
+        this.measurements = measurements;
     }
 
-    public List<MeasurementDTO> getMeasurement() {
-        return measurement;
+    public List<MeasurementDTO> getMeasurements() {
+        return measurements;
     }
 
-    public void setMeasurement(List<MeasurementDTO> measurement) {
-        this.measurement = measurement;
+    public void setMeasurements(List<MeasurementDTO> measurements) {
+        this.measurements = measurements;
     }
 }

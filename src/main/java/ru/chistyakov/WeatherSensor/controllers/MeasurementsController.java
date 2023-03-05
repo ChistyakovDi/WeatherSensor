@@ -43,7 +43,7 @@ public class MeasurementsController {
 
         measurementValidator.validate(measurementDTO, bindingResult);
         if (bindingResult.hasErrors())
-            returnErrorsToClient(bindingResult); // убрать
+            returnErrorsToClient(bindingResult);
 
         measurementService.addMeasurement(measurementToAdd);
         return ResponseEntity.ok(HttpStatus.OK);
