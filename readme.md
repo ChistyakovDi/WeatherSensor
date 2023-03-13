@@ -14,4 +14,5 @@
 
 ### Stack
 - Java
+- Spring Boot
 - Postgres
